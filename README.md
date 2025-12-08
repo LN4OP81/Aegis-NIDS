@@ -1,58 +1,42 @@
-# Aegis-NIDS
-Aegis is a Python-based Network Intrusion Detection System that monitors live traffic using packet-sniffing with Scapy. It detects intrusions, port scans, and SYN flood attacks, with Wireshark used for traffic validation. A hands-on tool for learning real-time network threat detection and analysis.
+# Aegis NIDS
 
-This project is a collection of demonstration scripts. The repository should be clean and focused on the code.
+Aegis is a Python-based Network Intrusion Detection System designed to monitor and analyze live network traffic. It uses advanced packet-sniffing techniques with Scapy to detect common attack patterns like port scans, SYN flood attacks, and general intrusions. Wireshark is used for validating captured traffic and confirming anomalies.
 
-  Files to Add to GitHub:
-   * IDS_demo.py
-   * port_scan_demo.py
-   * SYN_demo.py
+## Features
 
-  Files to Create:
+- Real-time network traffic monitoring  
+- Detection of port scans, SYN flood attacks, and general intrusions  
+- Raw packet capture with Scapy  
+- Traffic validation using Wireshark  
 
-  A) `README.md`
-  Explain the purpose of the project and how to run each script.
+## Installation
 
-    1 # Aegis - Network Intrusion Detection System (NIDS)
-    2
-    3 Aegis NIDS is a Python-based project demonstrating several network monitoring and intrusion detection techniques. It uses Scapy to perform deep packet
-      sniffing and analysis to identify potential network threats.
-    4
-    5 ## Features
-    6 - **Packet Sniffing:** Captures and analyzes raw network packets in real-time.
-    7 - **Port Scan Detection:** Identifies patterns consistent with network port scanning.
-    8 - **SYN Flood Detection:** Detects the initial signs of a SYN flood (half-open scan) attack.
-    9
-   10 ## How to Run
-   11 **Note:** These scripts must be run with administrator/root privileges to access raw network sockets.
-   12
-   13 1.  **Clone the repository and install dependencies:**
-      git clone <your-repo-url>
-      cd Aegis-NIDS
-      pip install -r requirements.txt
-   1 2.  **Run a specific demo:**
-  To run the general IDS demo
-      sudo python IDS_demo.py
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/aegis-nids.git
+   ```
 
-  To run the port scan detector
-      sudo python port_scan_demo.py
-   1
-   2 ## Tools Used
-   3 - Python
-   4 - Scapy
-   5 - Wireshark (for manual packet analysis and verification)
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-  B) `requirements.txt`
-  This project needs a requirements.txt file.
+3. Run the main script:
+   ```
+   python aegis_nids.pyUsage
 
-   1 scapy
+Run the system on a network interface to start live traffic monitoring. The tool will log suspicious activities based on predefined detection rules.
 
-  C) `.gitignore`
-  A standard Python gitignore is sufficient.
+Requirements
+```
+- Python 3.8+
+- Scapy
+- Wireshark (for traffic validation)
+```
+Contributing:
+Feel free to submit issues or pull requests. Contributions to enhance detection logic or improve usability are welcome.
 
-   1 # Byte-compiled / optimized / DLL files
-   2 __pycache__/
-   3 *.py[cod]
-   4 *$py.class
+License:
+MIT License
 
-  ---
+
