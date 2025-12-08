@@ -25,9 +25,9 @@ Aegis is a Python-based Network Intrusion Detection System designed to monitor a
    ```
    python aegis_nids.pyUsage
 
-Run the system on a network interface to start live traffic monitoring. The tool will log suspicious activities based on predefined detection rules.
 
-Requirements
+Run the system on a network interface to start live traffic monitoring. The tool will log suspicious activities based on predefined detection rules.
+Requirements:
 ```
 - Python 3.8+
 - Scapy
@@ -38,5 +38,10 @@ Feel free to submit issues or pull requests. Contributions to enhance detection 
 
 License:
 MIT License
+
+## Warning
+```
+This tool performs packet sniffing on network traffic, which may violate network policies or laws if used without proper authorization. Use responsibly and only on networks where you have explicit permission. Unauthorized sniffing can lead to disciplinary action or legal consequences.
+```
 
 
